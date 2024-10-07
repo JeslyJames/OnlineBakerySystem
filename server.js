@@ -3,12 +3,14 @@ require('dotenv').config();  // Load environment variables from .env
 const express = require('express');
 const { ApolloServer } = require('apollo-server-express');
 const mongoose = require('mongoose');
-const path = require('path');  // Make sure to import the path module
+const path = require('path');  // Import the path module
 const typeDefs = require('./schema');  // Import typeDefs from schema.js
 const resolvers = require('./resolvers/resolvers');  // Import resolvers
 
 const app = express();
-app.use('/images', express.static(path.join(__dirname, 'images')));  // Serve images from the images folder
+
+// Serve images from the Public/images folder
+app.use('/images', express.static(path.join(__dirname, 'Public', 'images')));  // Use 'images' in lowercase
 
 // MongoDB connection
 mongoose.connect(process.env.MONGO_URI, {

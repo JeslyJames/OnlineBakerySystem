@@ -18,6 +18,26 @@ const typeDefs = gql`
     products: [Product]
   }
 
+  type Address {
+    street: String
+    city: String
+    province: String
+    postal_code: String
+  }
+
+  type User {
+    id: ID!
+    name: String!
+    email: String!
+    address: Address
+    role: String
+  }
+
+  type AuthPayload {
+    token: String!
+    user: User!
+  }
+
   type Query {
     products(category: String): [Product]
     categories: [Category]
@@ -46,6 +66,22 @@ const typeDefs = gql`
     addCategory(name: String!): Category
 
     deleteProduct(id: ID!): Product
+
+    registerUser(
+      name: String!,
+      email: String!,
+      password: String!,
+      street: String!,
+      city: String!,
+      province: String!,
+      postal_code: String!,
+      role: String
+    ): User
+
+    loginUser(
+      email: String!,
+      password: String!
+    ): AuthPayload
   }
 `;
 
