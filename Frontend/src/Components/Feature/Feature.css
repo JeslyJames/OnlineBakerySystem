@@ -1,0 +1,12 @@
+.feature{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    height: 90vh;
+}
+.feature-item{
+    margin-top: 50px;
+    display: flex;
+    gap:30px;
+}

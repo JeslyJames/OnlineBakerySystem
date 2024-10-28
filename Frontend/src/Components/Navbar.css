@@ -1,0 +1,53 @@
+/* Navbar.css */
+.navbar {
+  display: flex;
+  justify-content: space-between; /* Adjusted to allow space between items */
+  align-items: center; /* Center align items vertically */
+  padding: 16px;
+  box-shadow: 0 1px 3px -2px black;
+}
+
+.nav-menu {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  gap: 30px; /* Space between menu items */
+  color: #626262;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.nav-menu li {
+  cursor: pointer;
+}
+
+.nav-login-cart {
+  display: flex;
+  align-items: center;
+  gap: 20px; /* Adjust gap between login button and cart icon */
+}
+
+.nav-cart-count {
+  width: 22px;
+  height: 22px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 11px;
+  font-size: 14px;
+  background: red;
+  color: white;
+}
+
+/* Add hover effects */
+.nav-menu li:hover {
+  color: #d31672; /* Change color on hover */
+}
+
+.nav-login-cart button {
+  padding: 10px 20px; /* Adjust padding for button */
+  border: 1px solid black;
+  border-radius: 5px;
+  background: white;
+  cursor: pointer;
+}

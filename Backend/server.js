@@ -10,7 +10,7 @@ const resolvers = require('./resolvers/resolvers');  // Import resolvers
 const app = express();
 
 // Serve images from the Public/images folder
-app.use('/images', express.static(path.join(__dirname, 'Public', 'images')));  // Use 'images' in lowercase
+app.use('/images', express.static(path.join(__dirname, 'Public', 'images'))); // This line serves images if needed
 
 // MongoDB connection
 mongoose.connect(process.env.MONGO_URI, {
@@ -26,11 +26,13 @@ const server = new ApolloServer({
   resolvers,  // Pass the resolvers here
 });
 
+// Start the Apollo Server
 server.start().then(() => {
   server.applyMiddleware({ app });
 
   const PORT = process.env.PORT || 5000;
   app.listen(PORT, () => {
-    console.log(`Server running on http://localhost:${PORT}/graphql`);
+    console.log(`Server running on http://localhost:${PORT}/graphql`); // GraphQL endpoint
+    console.log(`Images served from http://localhost:${PORT}/images/`); // Images endpoint, can be removed if not needed
   });
 });
