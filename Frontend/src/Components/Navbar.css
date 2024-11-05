@@ -1,76 +1,56 @@
-.navbar{
-    display: flex;
-    justify-content: space-around;
-    padding: 16px;
-    box-shadow: 0 1px 3px -2px black ;
+/* Navbar.css */
+.navbar {
+  display: flex;
+  justify-content: space-between; /* Adjusted to allow space between items */
+  align-items: center; /* Center align items vertically */
+  padding: 16px;
+  box-shadow: 0 1px 3px -2px black;
 }
-.nav-logo{
-    display: flex;
-    align-items: center;
-    gap: 10px;
+
+.nav-menu {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  gap: 30px; /* Space between menu items */
+  color: #626262;
+  font-size: 20px;
+  font-weight: 500;
 }
-.nav-menu{
-    display: flex;
-    align-items: center;
-    list-style: none;
-    gap: 50px;
-    color: #626262;
-    font-size: 20px;
-    font-weight: 500;
+
+.nav-menu li {
+  cursor: pointer;
 }
-.nav-menu li{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 3px;
-    cursor: pointer;
+.nav-menu li a{
+  color:#d5006d;
+  text-decoration: none;
 }
-.nav-login-cart{
-    display: flex;
-    align-items: center;
-    gap: 45px;
+.nav-login-cart {
+  display: flex;
+  align-items: center;
+  gap: 20px; /* Adjust gap between login button and cart icon */
 }
-.nav-login-cart button{
-    width: 157px;
-    height: 58px;
-    border: 1px solid black;
-    border-radius: 75px;
-    color: #626262;
-    font-size: 20px;
-    font-weight: 500;
-    background: white;
-    cursor: pointer;
+
+.nav-cart-count {
+  width: 22px;
+  height: 22px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 11px;
+  font-size: 14px;
+  background: red;
+  color: white;
 }
-.nav-login-cart button:active{
-    background: #626262;
-    color: white;
+
+/* Add hover effects */
+.nav-menu li:hover {
+  color: #d31672; /* Change color on hover */
 }
-.nav-cart-count{
-    width: 22px;
-    height: 22px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: -35px;
-    margin-left: -35px;
-    border-radius: 11px;
-    font-size: 14px;
-    background: red;
-    color: white;
-}
-a{
-    text-decoration: none;
-    color: #626262;
-}
-a:active,a:hover{
-    color:#d31672;
-}
-.footer-menu{
-    display: flex;
-    align-items: end;
-    justify-content: space-around;
-    list-style: none;
-    gap: 10px;
-    color: #626262;
+
+.nav-login-cart button {
+  padding: 10px 20px; /* Adjust padding for button */
+  border: 1px solid black;
+  border-radius: 5px;
+  background: white;
+  cursor: pointer;
 }
