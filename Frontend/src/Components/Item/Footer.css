@@ -1,0 +1,40 @@
+.footer {
+  background-color: #f8f9fa; /* Light gray background */
+  padding: 20px 0; /* Padding for top and bottom */
+  border-top: 1px solid #dee2e6; /* Light gray border */
+  text-align: center; /* Center text */
+}
+
+.footer-content {
+  max-width: 1200px; /* Max width of the footer content */
+  margin: 0 auto; /* Center the footer content */
+  display: flex;
+  flex-direction: column; /* Stack elements vertically */
+  align-items: center; /* Center items horizontally */
+}
+
+.footer-text {
+  margin-bottom: 10px; /* Space between text and menu */
+  font-size: 16px; /* Font size */
+}
+
+.footer-menu {
+  list-style: none; /* Remove bullet points */
+  padding: 0; /* Remove padding */
+  display: flex; /* Use flexbox for horizontal layout */
+  justify-content: center; /* Center items */
+}
+
+.footer-menu li {
+  margin: 0 15px; /* Space between menu items */
+}
+
+.footer-menu a {
+  text-decoration: none; /* Remove underline */
+  color: #007bff; /* Link color */
+  transition: color 0.3s; /* Smooth transition for hover effect */
+}
+
+.footer-menu a:hover {
+  color: #0056b3; /* Darker blue on hover */
+}
