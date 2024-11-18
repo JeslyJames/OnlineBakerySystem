@@ -1,0 +1,59 @@
+.CartItems{
+     margin: 20px 70px;
+}
+.cartitems-format-main hr{
+    height: 3px;
+    background-color: #e2e2e2;
+    border: 0;
+}
+.cartitems-format-main{
+    display: grid;
+    grid-template-columns: 0.5fr 2fr 1fr 1fr 1fr 1fr;
+    align-items: center;
+    gap: 75px;
+    padding: 20px 0px;
+    color:#d5006d;
+    font-size: 18px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.cartitems-format{
+    font-size: 17px;
+    font-weight: 500;
+    color: #454545;
+}
+.cartitems-format img{
+    height: 100px;
+    width: auto;
+}
+.cartitems-format img.removeIcon{
+    height: 30px;
+    margin: auto;
+    cursor: pointer;
+}
+.cartitems-quantity{
+    width: 54px;
+    height: 39px;
+    border: 2px solid #ebebeb;
+    background: #ffff;
+}
+.cartitem-down{
+    display: flex;
+    margin:100px 0px;
+}
+.cartitems-total{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    margin-right: 200px;
+    gap:40px;
+}
+.cartitems-total-item{
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 0;
+}
+.cartitem-down hr{
+    margin:1px;
+}
