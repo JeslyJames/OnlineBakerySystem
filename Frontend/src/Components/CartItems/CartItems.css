@@ -40,7 +40,7 @@
 }
 .cartitem-down{
     display: flex;
-    margin:100px 0px;
+    /* margin:100px 0px; */
 }
 .cartitems-total{
     flex: 1;
@@ -56,4 +56,13 @@
 }
 .cartitem-down hr{
     margin:1px;
+}
+.cartButton{
+    padding: 10px 20px;
+    background-color: rgb(213, 0, 109);
+    color: rgb(255, 255, 255); border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+    margin: 20px 0;
 }
