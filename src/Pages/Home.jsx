@@ -3,7 +3,7 @@ import '../index.css'
 import myImage from '../Components/Assets/bannerimage.jpg'
 import cakes from '../Components/Assets/cakes.jpg'
 import cupcakes from '../Components/Assets/cupcake.jpg'
-import croissants from '../Components/Assets/croissant.jpg'
+import croissants from '../Components/Assets/cheesecake.jpg'
 import tilde from '../Components/Assets/tilde.svg'
 import '../index.css'
 import { Link } from 'react-router-dom'
@@ -98,7 +98,7 @@ const Home = () => {
                     can ask for customization as well.
                   </p>
                 </div>
-                <a href="/" className="btn btn-viewmore d-inline-block">
+                <a href="/Cakes/1" className="btn btn-viewmore d-inline-block">
                   View More
                 </a>
               </div>
@@ -140,7 +140,7 @@ const Home = () => {
                     face.
                   </p>
                 </div>
-                <Link to='/CupCakes'>
+                <Link to='/Cakes/5'>
                     <div className="btn btn-viewmore d-inline-block">View More</div>
                 </Link>
               </div>
@@ -171,16 +171,14 @@ const Home = () => {
             <div className="spacer-col d-none d-lg-block col-lg-1"></div>
             <div className="col-lg-6">
               <div className="content-wrapper">
-                <h3 className="h2 mb-0">Croissants</h3>
+                <h3 className="h2 mb-0">CheeseCakes</h3>
                 <img src={tilde} alt="Wave Icon" />
                 <div className="mt-3 mb-4 mb-last-0">
                   <p>
-                    The flaky layers and rich taste will remind you of cozy
-                    cafés in Paris, making every bite a delightful escape. Start
-                    off your morning with a warm, buttery croissant.
+                  Indulge in the ultimate cheesecake experience! Crafted with the finest ingredients, our cheesecakes are rich, creamy, and irresistibly delicious. Perfect for any occasion, each slice is a testament to quality and flavor. Discover the joy of indulgence with the best cheesecakes that delight your taste buds every time!
                   </p>
                 </div>
-                <Link to='/Croissants'>
+                <Link to='/Cakes/2'>
                     <div className="btn btn-viewmore d-inline-block">View More</div>
                 </Link>
               </div>
