@@ -107,48 +107,20 @@ span.text-highlight {
   width: 50%;
   border-bottom: 1px solid #ddd;
 }
-@media (max-width: 768px) {
-  .hero img {
-    height: auto;
-    opacity: 0.6; /* Increase visibility for smaller screens */
+@media (min-width: 992px) {
+ .overlay-wrapper .text-row {
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 50%;
+      -webkit-transform: translateY(-50%);
+      transform: translateY(-50%);
   }
-
-  .centered {
-    font-size: 20px; /* Smaller font size on mobile */
-    padding: 10px;
+  .d-lg-block {
+    display: block !important;
   }
-
-  .categories .title h2 {
-    font-size: 20px; /* Adjust font size for headings */
-    width: auto; /* Remove fixed width for titles */
-  }
-
-  .fact-box {
-    padding: 15px;
-    margin-bottom: 20px;
-  }
-
   .content-wrapper {
-    padding: 1rem;
-  }
-
-  .btn-viewmore {
-    font-size: 14px;
-    padding: 8px;
-  }
-
-  .overlay-wrapper {
-    padding: 10px;
-  }
-
-  .overlay-wrapper img {
-    max-width: 100%;
-    height: auto;
-  }
-
-  .text-row {
-    position: static; /* Remove absolute positioning */
-    transform: none; /* Remove transform for mobile view */
+    padding-left: 2.5rem;
   }
 }
 
