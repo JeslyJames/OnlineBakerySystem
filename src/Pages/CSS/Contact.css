@@ -1,0 +1,127 @@
+/* General Container Styles */
+.contact-container {
+    max-width: 600px; /* Center the form */
+    margin: 20px auto; /* Center horizontally with top margin */
+    padding: 25px; /* Increase inner spacing */
+    border: 1px solid #ddd; /* Light border */
+    border-radius: 10px; /* Slightly more rounded corners */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1); /* Stronger shadow for emphasis */
+    background-color: #ffffff; /* White background for a clean look */
+    transition: transform 0.3s ease; /* Add subtle hover effect */
+}
+
+.contact-container:hover {
+    transform: translateY(-5px); /* Lift container on hover */
+}
+
+/* Title Styles */
+.contact-title {
+    text-align: center; /* Center align title */
+    color: #d5006d; /* Dark pink */
+    font-size: 2.2rem; /* Slightly larger font size */
+    margin-bottom: 15px; /* Increased spacing below */
+    font-weight: bold; /* Emphasize title */
+}
+
+/* Description Styles */
+.contact-description {
+    text-align: center; /* Center align description */
+    margin-bottom: 25px; /* Increased spacing below */
+    color: #666; /* Softer neutral color */
+    font-size: 1rem;
+    line-height: 1.5; /* Improve readability */
+}
+
+/* Form Styles */
+.contact-form {
+    display: flex;
+    flex-direction: column; /* Stack elements vertically */
+}
+
+/* Label Styles */
+.contact-label {
+    margin-bottom: 8px; /* Reduced spacing below label */
+    font-size: 1rem;
+    color: #444; /* Neutral color for labels */
+    font-weight: 500; /* Slightly bold for better readability */
+}
+
+/* Input Field Styles */
+.contact-input,
+.contact-textarea {
+    padding: 12px; /* Slightly larger inner spacing */
+    border: 1px solid #ccc; /* Softer border color */
+    border-radius: 6px; /* More rounded corners */
+    margin-bottom: 20px; /* Increased spacing between fields */
+    font-size: 1rem; /* Font size for inputs */
+    width: 100%; /* Full width */
+    box-sizing: border-box; /* Include padding in total width */
+    background-color: #f9f9f9; /* Light background for inputs */
+    transition: border-color 0.3s ease; /* Smooth transition for focus */
+}
+
+.contact-input:focus,
+.contact-textarea:focus {
+    border-color: #d5006d; /* Highlight border on focus */
+    outline: none; /* Remove default outline */
+    background-color: #fff; /* Highlight background on focus */
+}
+
+/* Textarea Styles */
+.contact-textarea {
+    height: 120px; /* Slightly larger fixed height */
+    resize: none; /* Prevent resizing */
+}
+
+/* Button Styles */
+.contact-button {
+    padding: 12px 20px; /* Adjust padding for better dimensions */
+    background-color: #d5006d; /* Dark pink background */
+    color: #fff; /* White text */
+    border: none; /* Remove border */
+    border-radius: 6px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor */
+    font-weight: bold; /* Bold text */
+    text-align: center; /* Center text */
+    transition: all 0.3s ease; /* Smooth hover transition */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add button shadow */
+}
+
+.contact-button:hover {
+    background-color: #b0005a; /* Darker pink on hover */
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2); /* Emphasize shadow on hover */
+    transform: translateY(-2px); /* Slight lift effect on hover */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .contact-container {
+        padding: 20px; /* Reduce padding for smaller screens */
+    }
+
+    .contact-title {
+        font-size: 2rem; /* Slightly smaller font size */
+    }
+
+    .contact-description {
+        font-size: 0.95rem; /* Adjust description font size */
+    }
+
+    .contact-button {
+        font-size: 1rem; /* Maintain button font size */
+    }
+}
+
+@media (max-width: 576px) {
+    .contact-container {
+        padding: 15px; /* Further reduce padding */
+    }
+
+    .contact-title {
+        font-size: 1.8rem; /* Smaller font size for very small screens */
+    }
+
+    .contact-description {
+        font-size: 0.9rem; /* Adjust font size */
+    }
+}

@@ -1,0 +1,249 @@
+/* General Navbar Styles */
+.navbar {
+  display: flex;
+  flex-direction: column;
+  padding: 16px;
+  box-shadow: 0 1px 3px -2px black;
+  position: relative;
+  background-color: #fff;
+}
+
+.nav-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-logo {
+  width: 50px;
+}
+
+.hamburger {
+  display: none;
+  font-size: 24px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+/* Main Menu */
+.nav-menu {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  gap: 20px;
+  color: #626262;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.nav-menu li {
+  position: relative;
+  cursor: pointer;
+}
+
+.nav-menu li a,
+.nav-menu li span {
+  text-decoration: none;
+  color: #626262;
+}
+
+.nav-menu li:hover a,
+.nav-menu li:hover span {
+  color: #d31672;
+}
+
+.cakes-link:hover .mega-menu {
+  display: block;
+}
+
+.mega-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: white;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  padding: 10px 0;
+  border-radius: 4px;
+  z-index: 1000;
+  min-width: 200px;
+}
+
+.mega-menu li {
+  padding: 5px 20px;
+}
+
+.mega-menu-item {
+  color: #626262;
+  font-size: 16px;
+  text-decoration: none;
+  display: block;
+  width: 100%;
+}
+
+.mega-menu-item:hover {
+  background: #f7f7f7;
+  color: #d31672;
+}
+
+/* Nav Controls */
+.nav-controls {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-right: 20px;
+}
+
+.nav-controls button {
+  font-size: 16px;
+  padding: 5px 10px;
+  border: 1px solid #ddd;
+  background-color: #f8f8f8;
+  color: #333;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.nav-controls button:hover {
+  background-color: #d5006d;
+  color: #fff;
+}
+
+/* Nav Login Cart */
+.nav-login-cart {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-top: 10px;
+}
+
+.nav-login-cart button {
+  padding: 5px 10px;
+  border: 1px solid #ddd;
+  background-color: #f8f8f8;
+  color: #333;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.nav-login-cart button:hover {
+  background-color: #d5006d;
+  color: #fff;
+}
+
+.nav-login-cart h4 {
+  margin: 0;
+  font-size: 16px;
+  color: #626262;
+}
+
+.nav-controls-mobile {
+  display: none;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .hamburger {
+    display: block;
+  }
+
+  .nav-menu {
+    display: none;
+    flex-direction: column;
+    gap: 10px;
+    position: absolute;
+    top: 70px;
+    left: 0;
+    right: 0;
+    background: white;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 999;
+  }
+
+  .nav-menu.open {
+    display: flex;
+  }
+
+  .nav-menu li {
+    width: 100%;
+  }
+
+  .nav-menu li a,
+  .nav-menu li span {
+    width: 100%;
+    display: block;
+    padding: 10px 0;
+    color: #626262;
+    text-decoration: none;
+  }
+
+  .nav-menu li:hover a,
+  .nav-menu li:hover span {
+    color: #d31672;
+  }
+
+  .mega-menu {
+    position: relative;
+    display: none;
+    flex-direction: column;
+    background: #f9f9f9;
+    box-shadow: none;
+    padding: 0;
+    top: 0;
+    left: 0;
+  }
+
+  .cakes-link {
+    position: relative;
+  }
+
+  .cakes-link .mega-menu {
+    display: none;
+  }
+
+  .cakes-link.open .mega-menu {
+    display: flex;
+  }
+
+  .mega-menu li {
+    padding: 0;
+  }
+
+  .mega-menu-item {
+    padding: 10px 0 10px 20px;
+  }
+
+  .nav-controls {
+    display: none; /* Hide the controls in the nav-login-cart on mobile */
+  }
+
+  .nav-controls-mobile {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 10px;
+  }
+
+  .nav-controls-mobile button {
+    font-size: 16px;
+    padding: 5px 10px;
+    border: 1px solid #ddd;
+    background-color: #f8f8f8;
+    color: #333;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+
+  .nav-controls-mobile button:hover {
+    background-color: #d5006d;
+    color: #fff;
+  }
+
+  .nav-login-cart {
+    display: none;
+  }
+}

@@ -1,0 +1,26 @@
+.feature {
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    gap: 20px; /* Add spacing between items */
+    align-items: center; /* Center items horizontally */
+    padding: 20px; /* Add some padding for better spacing */
+  }
+  
+  .feature-item {
+    display: flex;
+    gap: 15px; /* Add spacing between individual items */
+    width: 100%; /* Make items full width for better alignment */
+    max-width: 1200px; /* Add a max width for better control */
+  }
+  
+  @media (max-width: 768px) {
+    .feature {
+      padding: 10px; /* Reduce padding on smaller screens */
+    }
+  
+    .feature-item {
+      gap: 10px; /* Reduce spacing between items */
+      flex-direction: column;
+    }
+  }
+  
