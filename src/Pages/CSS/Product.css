@@ -1,0 +1,15 @@
+.product{
+    padding: 20px;
+}
+.product-banner{
+display: block;
+margin: 30px auto;
+width: 82%;
+}
+.product-category{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+}

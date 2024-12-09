@@ -1,0 +1,59 @@
+/* General styling for the item card */
+.Item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  width: 300px; /* Fixed width for all cards */
+  height: 450px; /* Fixed height for all cards */
+  margin: 10px;
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s, box-shadow 0.2s;
+  background-color: #fff;
+}
+
+.Item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Styling for the image */
+.Item img {
+  width: 100%;
+  height: 200px; /* Fixed height for the image */
+  object-fit: cover; /* Ensures the image fits within the container without distortion */
+  border-radius: 4px;
+  margin-bottom: 10px;
+}
+
+/* Title and description */
+.Item h3 {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #333;
+  margin: 10px 0 5px 0;
+  text-align: center;
+}
+
+.Item p {
+  font-size: 1rem;
+  color: #666;
+  margin: 5px 0;
+  text-align: center;
+}
+
+/* Styling for the button group */
+.button-group {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.button-group button {
+  flex: 1;
+  margin: 0 5px;
+  font-size: 0.9rem;
+}

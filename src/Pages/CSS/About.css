@@ -1,0 +1,103 @@
+/* General Styles */
+.about-content {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    padding: 20px;
+    color: #333;
+  }
+  
+  .about-content h1 {
+    text-align: center;
+    color: #d31672;
+    margin-bottom: 30px;
+    font-size: 2.5rem;
+  }
+  
+  /* About Sections */
+  .about-section {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+    gap: 20px;
+  }
+  
+  /* Text Section */
+  .about-text {
+    flex: 1;
+    font-size: 1rem;
+    color: #555;
+  }
+  
+  .about-text h2 {
+    color: #d31672;
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+  }
+  
+  .about-text p {
+    margin: 0;
+  }
+  
+  /* Image Section */
+.about-image,
+.about-image-join {
+  flex: 1;
+  display: flex; /* Use flexbox to center the image */
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+}
+
+.about-image img,
+.about-image-join img {
+  max-width: 100%;
+  max-height: 400px;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+  
+  /* Responsive Design */
+  @media (max-width: 992px) {
+    .about-section {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .about-text h2 {
+      font-size: 1.5rem;
+    }
+  
+    .about-text p {
+      font-size: 1rem;
+    }
+  
+    .about-image img,
+    .about-image-join img {
+      max-width: 100%; /* Full width for smaller screens */
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .about-content {
+      padding: 10px;
+    }
+  
+    .about-content h1 {
+      font-size: 2rem;
+    }
+  
+    .about-text h2 {
+      font-size: 1.3rem;
+    }
+  
+    .about-text p {
+      font-size: 0.9rem;
+    }
+  
+    .about-image img,
+    .about-image-join img {
+      max-width: 90%; /* Slight margin on very small screens */
+    }
+  }
+  

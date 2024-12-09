@@ -1,13 +1,204 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/******************************Home Page start*************************/
+.hero{
+  position: relative;
+  text-align: center;
+  color: #ffc0c7;
+}
+.hero img{
+width:100%;
+height:100%;
+opacity: 0.4;
+}
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color:#d31672;
+  font-size: 28px;
+  font-weight: bold;
+  font-style: italic;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.categories{
+  position: relative;
 }
+
+.title h2 {
+  font-size:26px;
+  font-weight:700;
+  letter-spacing:1px;
+  text-transform:uppercase;
+  width:160px;
+  text-align:center;
+  margin:auto;
+  white-space:nowrap;
+  padding-bottom:13px;
+}
+
+.title h2:after {
+    background-color: #d31672;
+    content: '';
+    display: block;
+    position:absolute;
+    bottom:0;
+    height: 3px;
+    width: 75px;
+    margin-bottom: 0.25em;
+}
+.overlay-wrapper {
+  position: relative;
+}
+.spacer-col {
+  -webkit-box-ordinal-group: 3;
+  -ms-flex-order: 2;
+  order: 2;
+}
+.content-wrapper {
+  background-color: #fff;
+  padding: 2.5rem 0;
+}
+.btn-viewmore {
+  color: #d31672;
+  border: 1px solid #3b7790;
+  background-color: #fff;
+}
+.fact-box {
+  position: relative;
+  z-index: 0;
+}
+.fact-box:before {
+  content: "";
+  display: block;
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  right: 0;
+  width: 75%;
+  height: 100%;
+  border-top: 1px solid #ddd;
+  border-right: 1px solid #ddd;
+}
+
+.fact-box h3 {
+  font-size: 1rem;
+}
+span.text-highlight {
+  text-transform: uppercase;
+  display: inline;
+  line-height: 1.4;
+  background-image: linear-gradient(#3b7790, #3b7790);
+  background-position: 0 95%;
+  background-repeat: no-repeat;
+  background-size: 100% .4em;
+}
+.fact-box:after {
+  content: "";
+  display: block;
+  position: absolute;
+  z-index: -1;
+  bottom: 0;
+  right: 0;
+  height: 1px;
+  width: 50%;
+  border-bottom: 1px solid #ddd;
+}
+@media (min-width: 992px) {
+ .overlay-wrapper .text-row {
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 50%;
+      -webkit-transform: translateY(-50%);
+      transform: translateY(-50%);
+  }
+  .d-lg-block {
+    display: block !important;
+  }
+  .content-wrapper {
+    padding-left: 2.5rem;
+  }
+}
+
+/******************************Home Page ends*************************/
+/******************************Login Page start*******************/
+
+.login-container {
+  max-width: 400px; /* Maximum width for the container */
+  margin: 100px auto; /* Center the container */
+  padding: 20px; /* Padding inside the container */
+  background-color: white; /* White background for the form */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Subtle shadow effect */
+  border-radius: 8px; /* Rounded corners */
+}
+
+h1 {
+  text-align: center; /* Center the title */
+  color: #d31672; /* Theme color */
+  margin-bottom: 20px; /* Space below the title */
+}
+
+.form-group {
+  margin-bottom: 15px; /* Space below each form group */
+}
+
+label {
+  display: block; /* Label as block for better layout */
+  margin-bottom: 5px; /* Space below the label */
+  color: #333; /* Darker color for labels */
+}
+
+input {
+  width: 100%; /* Full width for input fields */
+  padding: 10px; /* Padding inside the input fields */
+  border: 1px solid #ccc; /* Light gray border */
+  border-radius: 4px; /* Rounded corners */
+  box-sizing: border-box; /* Include padding in total width */
+  font-size: 16px; /* Font size */
+}
+
+input:focus {
+  border-color: #d31672; /* Change border color on focus */
+  outline: none; /* Remove default outline */
+}
+
+.login-button {
+  width: 100%; /* Full width for the button */
+  padding: 10px; /* Padding inside the button */
+  background-color: #d31672; /* Theme color */
+  color: white; /* White text color */
+  border: none; /* No border */
+  border-radius: 4px; /* Rounded corners */
+  font-size: 16px; /* Font size */
+  cursor: pointer; /* Pointer cursor on hover */
+  transition: background-color 0.3s; /* Smooth transition */
+}
+
+.login-button:hover {
+  background-color: #b41260; /* Darker shade on hover */
+}
+
+.error-message {
+  color: red; /* Red color for error messages */
+  margin-bottom: 10px; /* Space below error message */
+  text-align: center; /* Center align the message */
+}
+
+.register-link {
+  text-align: center; /* Center align the registration link */
+  margin-top: 15px; /* Space above the link */
+}
+
+.register-link a {
+  color: #d31672; /* Theme color for links */
+  text-decoration: none; /* No underline */
+}
+
+.register-link a:hover {
+  text-decoration: underline; /* Underline on hover */
+}
+/******************************Login Page end*******************/
