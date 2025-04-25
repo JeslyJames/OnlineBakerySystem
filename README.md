@@ -21,6 +21,6 @@ This project was built to simulate a real-world e-commerce bakery system using m
 
 ## 📸 UI Preview
 Designed in Figma for a clean, engaging user experience.
-🎨 [Figma Design Preview](https://www.figma.com/file/your-figma-link-here)
+🎨 [Figma Design Preview](https://www.figma.com/proto/6pIqC7MXRGgQOlFVjxmgYY/Cutie-Pie-Bakery?node-id=1-1172&p=f&t=PEIkKiN2Dt98774s-0&scaling=scale-down-width&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=1%3A1172)
 
 
